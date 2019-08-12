@@ -1,7 +1,7 @@
 
-<?php echo 'Labas, Pasauli!'; ?>
+<?php echo '<h2 style="margin-bottom: 0;">Labas, Pasauli!</h2><br>'; ?>
 
-<?= 'Labas'; ?>
+<?= '<h3 style="color: red; margin-top: 0;">Labas</h3>'; ?>
 
 
 
@@ -12,14 +12,15 @@ $populiation = 574221;
 ?>
 
 
-<ul>
+
+<ul style="color: green; font-weight: bold;">
    <li><?php echo $country; ?></li>
    <li><?php echo $city; ?></li>
    <li><?php echo $populiation; ?></li>
 </ul>
 
 
-<p><?php echo $city.' - Lietuvos sostinė'; ?></p>
+<p style="font-family: Verdana; font-size: 25px; background-color: skyblue;"><?php echo $city.' - Lietuvos sostinė'; ?></p>
 <p><?php echo "Lietuvos sostinė - $city"; ?></p>
 
 <p><?php echo "$country ir $city, sparčiai auga"; ?></p>

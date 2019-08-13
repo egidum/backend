@@ -41,4 +41,21 @@ echo "$x % $y = $z <br>";
 ?>
 
 
-<?php phpinfo(); ?>
+<!--<?php phpinfo(); ?>-->
+
+<?php
+	echo strlen('Kiek tau metu?');
+?>
+
+<?php
+$num1 = 30;
+$num2 = $num1;
+
+echo '<br>$num1: '. $num1;       // 10
+echo '<br>$num2: ' . $num2;      // 10
+
+$num1 = 20;
+
+echo '<br>$num1: ' . $num1;      // 20
+echo '<br>$num2: ' . $num2;      // 10
+?>

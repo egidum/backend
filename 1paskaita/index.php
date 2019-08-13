@@ -1,9 +1,9 @@
 
 <?php echo '<h2 style="margin-bottom: 0;">Labas, Pasauli!</h2><br>'; ?>
 
-<?= '<h3 style="color: red; margin-top: 0;">Labas</h3>'; ?>
-
-
+<?= '<h3 style="color: red; margin-top: 0;">Variantas #1 (su =)</h3>' ?>
+<?php echo '<h3 style="color: red; margin-top: 0;">Variantas #2 ariantas (su php)</h3>' ?>
+<? echo '<h3 style="color: red; margin-top: 0;">Variantas #3 (be php ir =), t.b. įjungta "short_open_tag" </h3>'; ?>
 
 <?php
 $country = 'Lietuva';
@@ -11,20 +11,18 @@ $city = 'Vilnius';
 $populiation = 574221;
 ?>
 
-
-
 <ul style="color: green; font-weight: bold;">
    <li><?php echo $country; ?></li>
    <li><?php echo $city; ?></li>
    <li><?php echo $populiation; ?></li>
 </ul>
 
-
 <p style="font-family: Verdana; font-size: 25px; background-color: skyblue;"><?php echo $city.' - Lietuvos sostinė'; ?></p>
 <p><?php echo "Lietuvos sostinė - $city"; ?></p>
 
-<p><?php echo "$country ir $city, sparčiai auga"; ?></p>
+<p style="color: #66cd18"><?php echo "$country ir $city, sparčiai auga"; ?></p>
 <p><?php echo $country.' ir '.$city.', sparčiai auga'; ?></p>
+
 
 
 <?php
@@ -41,8 +39,5 @@ echo "$x / $y = $z <br>";
 $z = $x % $y;
 echo "$x % $y = $z <br>";
 ?>
-
-
-
 
 

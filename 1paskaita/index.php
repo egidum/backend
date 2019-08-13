@@ -51,7 +51,7 @@ echo "$x % $y = $z <br>";
 $num1 = 30;
 $num2 = $num1;
 
-echo '<br>$num1: ' . $num1;       // 10
+echo '<br>$num1: ' . $num1;      // 10
 echo '<br>$num2: ' . $num2;      // 10
 
 $num1 = 20;
@@ -61,7 +61,13 @@ echo '<br>$num2: ' . $num2;      // 10
 ?>
 
 <?php
-
   echo '<br>' . $_SERVER['PHP_SELF'];
+?>
 
+<?php
+$str = "Skaičus: ";
+$num = 12;
+
+echo '<br>' . $str . $num . '<br>';
+echo 'Skaičius: ' . 1;
 ?>

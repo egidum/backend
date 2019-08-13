@@ -41,3 +41,4 @@ echo "$x % $y = $z <br>";
 ?>
 
 
+<?php phpinfo(); ?>

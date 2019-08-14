@@ -30,5 +30,31 @@
 
    $cold_temps = array_slice($temps, -5, 5);
    print_r($cold_temps);
+   echo '<br>';
 
 ?>
+
+
+
+<?php
+   $temps = [
+      4, 3, 9, 19, 19, 9, 12, 20, 24, 20,
+      12, 14, 18, 21, 20, 23, 16, 16, 15,
+      19, 19, 17, 17, 15, 12, 13, 13, 15,
+      19, 21];
+   array_sum($temps);
+
+   echo round(array_sum($temps) / count($temps)) . '<br>';
+
+   rsort($temps);
+   print_r($temps);
+   echo '<br>';
+
+   $warm_temps = array_slice($temps, 0, 5);
+   print_r($warm_temps);
+   echo '<br>';
+
+   $cold_temps = array_slice($temps, -5, 5);
+   print_r($cold_temps);
+?>
+

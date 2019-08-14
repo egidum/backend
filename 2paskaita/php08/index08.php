@@ -42,8 +42,6 @@
       12, 14, 18, 21, 20, 23, 16, 16, 15,
       19, 19, 17, 17, 15, 12, 13, 13, 15,
       19, 21];
-   array_sum($temps);
-
    echo round(array_sum($temps) / count($temps)) . '<br>';
 
    rsort($temps);

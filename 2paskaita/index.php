@@ -71,8 +71,7 @@ echo($sum / count($arr)) . '<br>';
 ?>
 
 <?php
-$arr = array(2, 3, 3, 4);
-array_sum($arr);
+$arr = array(8, 3, 3, 4);
 
 echo(array_sum($arr) / count($arr)) . '<br>';
 ?>

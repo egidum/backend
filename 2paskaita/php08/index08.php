@@ -18,15 +18,15 @@
    foreach($temps as $temp) {
       $temps_sum += $temp;
    }
-   echo round($temps_sum  / count($temps)) . "<br>";
+   echo round($temps_sum  / count($temps)) . '<br>';
 
    rsort($temps);
    print_r($temps);
-   echo "<br>";
+   echo '<br>';
 
    $warm_temps = array_slice($temps, 0, 5);
    print_r($warm_temps);
-   echo "<br>";
+   echo '<br>';
 
    $cold_temps = array_slice($temps, -5, 5);
    print_r($cold_temps);

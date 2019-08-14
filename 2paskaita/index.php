@@ -71,10 +71,10 @@ echo($sum / count($arr)) . '<br>';
 ?>
 
 <?php
-$arr = array(1, 2, 3, 4);
+$arr = array(2, 3, 3, 4);
 array_sum($arr);
 
-echo($sum / count($arr)) . '<br>';
+echo(array_sum($arr) / count($arr)) . '<br>';
 ?>
 
 <?php

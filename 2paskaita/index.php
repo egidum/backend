@@ -66,10 +66,20 @@ $sum = 0;
 foreach($arr as $value) {
     $sum = $sum + $value; //$sum += $value;
 }
-echo($sum / count($arr));
+echo($sum / count($arr)) . '<br>';
 
 ?>
 
+<?php
+$arr = array(1, 2, 3, 4);
+array_sum($arr);
 
+echo($sum / count($arr)) . '<br>';
+?>
 
+<?php
+$foo = array(2, 2, 6, 6);
+$average_of_foo = array_sum($foo) / count($foo);
+echo($average_of_foo);
+?>
 

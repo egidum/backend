@@ -39,7 +39,7 @@ $cities2 = [
 ?>
 
 <ul>
-   <li style="list-style: none"><?php echo '“Gyventojų skaičius: ' . $cities2 ['tokijas'] = 13.6 . ' mln.”' ?></li>
+   <li style="list-style: none"><?php echo 'Gyventojų skaičius: ' . $cities2 ['tokijas'] = 13.6 . ' mln.' ?></li>
 </ul>
 
 <!-- užduotis 2-->
@@ -58,17 +58,8 @@ $cities3 = [
 
 
 
-<!-- užduotis 3-->
 
-<?php
-$metai = 1774;
-if($metai >= $cities3['Vasingtonas'][1]){
-   echo "Vašingtonas yra JAV sostinė.";
-}elseif($metai = $metai){
-   echo "“JAV sostinė vis dar Filadelfijoje.";
-};
 
-?>
 
 
 

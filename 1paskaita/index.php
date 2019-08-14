@@ -71,3 +71,9 @@ $num = 12;
 echo '<br>' . $str . $num . '<br>';
 echo 'Skaičius: ' . 1;
 ?>
+
+
+
+
+
+

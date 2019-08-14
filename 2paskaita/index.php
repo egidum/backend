@@ -54,12 +54,21 @@ $cities3 = [
    $cities3 ['Londonas'] = [8.6, 43, 'Anglija'];
 
    print_r($cities3);
+      echo "<br>";
 ?>
 
 
+<!-- masyvo sumavimas / vidurkis -->
 
+<?php
+$arr = array(1, 2, 3, 4);
+$sum = 0;
+foreach($arr as $value) {
+    $sum = $sum + $value; //$sum += $value;
+}
+echo($sum / count($arr));
 
-
+?>
 
 
 

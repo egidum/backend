@@ -1,6 +1,5 @@
 <!--
-- Sukurkite formą, kuri leis vartotojui įvesti savo vardą ir pavardę. Paspaudus
-mygtuką, šie duomenys turėtų būti išspausdinti naršyklėje.-->
+- Sukurkite formą, kuri leis vartotojui įvesti savo vardą ir pavardę. Paspaudus mygtuką, šie duomenys turėtų būti išspausdinti naršyklėje. Forma turėtų dingti, kai išvedamas rezultatas, o rezultato spausdinimas turėtų būti tik tuomet, kai vartotojas užpildė visus laukelius ir paspaudė mygtuką.-->
 
 <html>
   <head>
@@ -24,8 +23,11 @@ mygtuką, šie duomenys turėtų būti išspausdinti naršyklėje.-->
 
 
          <?php
+            if(empty($_POST['fname'] && $_POST['lname'])){
+               die("<p>Būtina užpildyti visus laukus!</p>");
+            }
             if(isset($_POST['submit']))
-            print_r("<p>Prisijungėte kaip, {$_POST['fname']} {$_POST['lname']}</p>");
+               echo("<p>Prisijungėte kaip, {$_POST['fname']} {$_POST['lname']}</p>");
             exit;
          ?>
       </form>

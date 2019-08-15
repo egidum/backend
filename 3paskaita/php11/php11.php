@@ -18,10 +18,13 @@ naršyklę.-->
          <input type="submit" value="skaičiuoti" name="submit"><br>
 
          <?php
-            if(isset($_POST['submit'])) {
-            $plotas = $_POST['ilgis'] * $_POST['plotis'];
+            if(empty($_POST['ilgis'] && $_POST['plotis'])){
+               die("<p>Įveskite duomenys!</p>");
             }
-            echo "<p>Stačiakampio plotas: $plotas kv.m</p>";
+            if(isset($_POST['submit'])) {
+               $plotas = $_POST['ilgis'] * $_POST['plotis'];
+               echo "<p>Stačiakampio plotas: $plotas kv.m</p>";
+            }
             exit;
          ?>
       </form>

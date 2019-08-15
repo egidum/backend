@@ -26,8 +26,9 @@
             if(empty($_POST['fname'] && $_POST['lname'])){
                die("<p>Būtina užpildyti visus laukus!</p>");
             }
-            if(isset($_POST['submit']))
+            if(isset($_POST['submit'])) {
                echo("<p>Prisijungėte kaip, {$_POST['fname']} {$_POST['lname']}</p>");
+            }
             exit;
          ?>
       </form>

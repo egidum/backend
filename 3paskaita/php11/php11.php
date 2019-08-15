@@ -1,7 +1,5 @@
 <!--
-- Sukurkite formą, kuri leis vartotojui įvesti stačiakampio ilgį ir plotį. Įvestus
-duomenis panaudokite stačiakampio ploto apskaičiavimui. Rezultatą išveskite į
-naršyklę.-->
+- Sukurkite formą, kuri leis vartotojui įvesti stačiakampio ilgį ir plotį. Įvestus duomenis panaudokite stačiakampio ploto apskaičiavimui. Rezultatą išveskite į naršyklę. Forma turėtų dingti, kai išvedamas rezultatas, o rezultato spausdinimas turėtų būti tik tuomet, kai vartotojas užpildė visus laukelius ir paspaudė mygtuką.-->
 
 <html>
   <head>

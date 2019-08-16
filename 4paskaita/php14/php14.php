@@ -19,13 +19,15 @@
 
    <footer>
       <h4>&copy; <?php
-         $Date = 2030;
-         if($Date < date('Y')) {
-            echo $Date . '-' . date('Y');
-         } else {
-            echo date('Y');
+         function metai($Date) {
+            if($Date < date('Y')) {
+               echo $Date . '-' . date('Y');
+            } else {
+               echo date('Y');
+            }
          }
-         ?>
+         metai (2015);
+       ?>
       </h4>
    </footer>
 

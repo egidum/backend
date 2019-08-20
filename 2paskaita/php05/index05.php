@@ -23,7 +23,7 @@ $cities3 = [
 
 
 <ul>
-   <li style="list-style: none"><?php echo 'Gyventojų skaičius: ' . $cities3 ['Londonas'][0] . ' mln.' ?></li>
-   <li style="list-style: none"><?php echo 'Įkurtas: ' . $cities3 ['Londonas'][1] . ' m.' ?></li>
-   <li style="list-style: none"><?php echo 'Šalis: ' . $cities3 ['Londonas'][2] ?></li>
+   <li style="list-style: none"><?php echo 'Gyventojų skaičius: ' . $cities3 ['Londonas'][0] . ' mln.'; ?></li>
+   <li style="list-style: none"><?php echo 'Įkurtas: ' . $cities3 ['Londonas'][1] . ' m.'; ?></li>
+   <li style="list-style: none"><?php echo 'Šalis: ' . $cities3 ['Londonas'][2]; ?></li>
 </ul>

@@ -15,7 +15,10 @@ $cities = ['Berlynas', 'Roma', 'Londonas'];
 ?>
 
 <ul>
-   <li style="list-style: none"><?php echo $cities[1] ?></li>
+   <?php
+//   echo '<li style="list-style: none">' . $cities[1] . '</li>';
+   echo "<li style=\"list-style: none\">$cities[1]</li>";
+   ?>
 </ul>
 
 
@@ -31,5 +34,8 @@ $cities2 = [
 ?>
 
 <ul>
-   <li style="list-style: none"><?php echo 'Gyventojų skaičius: ' . $cities2 ['tokijas'] = 13.6 . ' mln.' ?></li>
+   <?php
+//   echo '<li style="list-style: none">Gyventojų skaičius: ' . $cities2 ['tokijas'] . ' mln.' . '</li>';
+   echo "<li style=\"list-style: none\">Gyventojų skaičius: {$cities2 ['tokijas']} mln.</li>";
+   ?>
 </ul>

@@ -8,6 +8,8 @@
 3. Naudok rsort( ), kad surūšiuoti ciklą žemėjančia tvarka.
 4. Naudok array_slice( ), kad surastum penkias šilčiausias ir penkias šalčiausias temperatūras.-->
 
+<h3>Pirmas variantas su foreach</h3>
+
 <?php
    $temps = [
       4, 3, 9, 19, 19, 9, 12, 20, 24, 20,
@@ -18,24 +20,24 @@
    foreach($temps as $temp) {
       $temps_sum += $temp;
    }
-   echo round($temps_sum  / count($temps)) . '<br>';
+   echo '<p>Vilniaus balandžio mėn. vidutinė oro temperatūra: </p>' .
+   round($temps_sum  / count($temps)) . '&#8451;';
+   echo '<br>';
 
    rsort($temps);
-   echo '<pre>';
-   print_r($temps);
-   echo '</pre>' . '<br>';
+   echo '<p>Vilniaus balandžio mėn. oro temperatūros (&#8451;): </p>' . implode(", ", $temps);
+   echo '<br>';
 
    $warm_temps = array_slice($temps, 0, 5);
-   echo '<pre>';
-   print_r($warm_temps);
-   echo '</pre>' . '<br>';
+   echo '<p>Šilčiausios Vilniaus balandžio mėn. oro temperatūros (&#8451;): </p>' . implode(", ", $warm_temps);
+   echo '<br>';
 
    $cold_temps = array_slice($temps, -5, 5);
-   echo '<pre>';
-   print_r($cold_temps);
-   echo '</pre>' . '<br>';
+   echo '<p>Šalčiausios Vilniaus balandžio mėn. oro temperatūros (&#8451;): </p>' . implode(", ", $cold_temps);
 
 ?>
+
+<h3>Antras variantas su array_sum</h3>
 
 <?php
    $temps = [

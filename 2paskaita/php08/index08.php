@@ -21,20 +21,21 @@
    echo round($temps_sum  / count($temps)) . '<br>';
 
    rsort($temps);
+   echo '<pre>';
    print_r($temps);
-   echo '<br>';
+   echo '</pre>' . '<br>';
 
    $warm_temps = array_slice($temps, 0, 5);
+   echo '<pre>';
    print_r($warm_temps);
-   echo '<br>';
+   echo '</pre>' . '<br>';
 
    $cold_temps = array_slice($temps, -5, 5);
+   echo '<pre>';
    print_r($cold_temps);
-   echo '<br>';
+   echo '</pre>' . '<br>';
 
 ?>
-
-
 
 <?php
    $temps = [
@@ -42,17 +43,20 @@
       12, 14, 18, 21, 20, 23, 16, 16, 15,
       19, 19, 17, 17, 15, 12, 13, 13, 15,
       19, 21];
-   echo round(array_sum($temps) / count($temps)) . '<br>';
+
+   echo '<p>Vilniaus balandžio mėn. vidutinė oro temperatūra: </p>' .
+   round(array_sum($temps)  / count($temps)) . '&#8451;';
+   echo '<br>';
 
    rsort($temps);
-   print_r($temps);
+   echo '<p>Vilniaus balandžio mėn. oro temperatūros (&#8451;): </p>' . implode(", ", $temps);
    echo '<br>';
 
    $warm_temps = array_slice($temps, 0, 5);
-   print_r($warm_temps);
+   echo '<p>Šilčiausios Vilniaus balandžio mėn. oro temperatūros (&#8451;): </p>' . implode(", ", $warm_temps);
    echo '<br>';
 
    $cold_temps = array_slice($temps, -5, 5);
-   print_r($cold_temps);
+   echo '<p>Šalčiausios Vilniaus balandžio mėn. oro temperatūros (&#8451;): </p>' . implode(", ", $cold_temps);
 ?>
 

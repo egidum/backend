@@ -29,24 +29,3 @@ $cities3 = [
 
 
 <?php
-/*
-$metai = 1774;
-$cities3 = [
-   'Tokijas' => [13.6, 1868, 'Japonija'],
-   'Vasingtonas' => [0.6, 1790, 'JAV'],
-   'Maskva' => [11.5, 1147, 'Rusija']
-];
-
-$y = $cities3['Vasingtonas'][1] - $metai;
-
-   if($metai >= $cities3['Vasingtonas'][1]) {
-      echo "Vašingtonas yra JAV sostinė.";
-   } else {
-
-   }
-   */
-?>
-
-
-
-
